@@ -7,7 +7,7 @@
   <meta name="description" content="Portfólio de Gabriela Ramos: estudante de Gestão de TI, com foco em automação, dados e desenvolvimento front-end.">
   <meta property="og:title" content="Gabriela Ramos | Portfólio">
   <meta property="og:description" content="Automação, dados e desenvolvimento web.">
-  <meta property="og:image" content="assets/gabriela.jpg">
+  <meta property="og:image" content="assets/gabriela.jpg?v=2">
   <meta name="theme-color" content="#C92A66">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23C92A66'/%3E%3Crect x='4' y='8' width='24' height='16' fill='%23FCEFE7' transform='rotate(-6 16 16)'/%3E%3Ctext x='16' y='21' font-family='Arial Black,sans-serif' font-size='11' font-weight='900' fill='%23140A0E' text-anchor='middle' transform='rotate(-6 16 16)'%3EGR%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
   <!-- NAV -->
   <header class="nav" id="nav">
     <div class="container nav__inner">
-      <a href="#inicio" class="logo">gabi<span>.dev</span></a>
+      <a href="#inicio" class="logo">gabi <span>ramos</span></a>
       <nav class="nav__links" id="navLinks" aria-label="Seções">
         <a href="#sobre">Sobre</a>
         <a href="#experiencia">Experiência</a>
@@ -70,14 +70,12 @@
 
         <div class="hero__visual">
           <div class="photo">
-            <img src="assets/gabriela.jpg" alt="Foto de Gabriela Ramos" width="640" height="800">
+            <img src="assets/gabriela.jpg?v=2" alt="Foto de Gabriela Ramos" width="640" height="800">
           </div>
           <div class="float-card float-card--1">
-            <span class="float-card__icon" aria-hidden="true">📊</span>
             <div><strong>Dados → decisão</strong><small>painéis em tempo real</small></div>
           </div>
           <div class="float-card float-card--2">
-            <span class="float-card__icon" aria-hidden="true">⚡</span>
             <div><strong>Automação diária</strong><small>roda sozinha às 5h</small></div>
           </div>
         </div>
@@ -116,7 +114,8 @@
             <strong>Gestão da Tecnologia da Informação</strong> no Centro Universitário Senac Santo Amaro.
           </p>
           <p>
-            Hoje atuo na <strong>Vesti</strong>, onde desenvolvo automações e painéis de dados para a área financeira.
+            Hoje estagio no financeiro da <strong>Vesti</strong>: entrei para cuidar de planilhas e propus
+            automatizar os processos do time com automações e painéis de dados.
             São rotinas que conferem faturas todos os dias, apontam divergências e mostram, num só lugar, o que
             precisa de atenção. Gosto de olhar para uma tarefa repetitiva e pensar: <em>“isso pode rodar sozinho”</em>.
           </p>
@@ -127,10 +126,6 @@
         </div>
 
         <div class="about__side reveal">
-          <div class="cutout" aria-hidden="true">
-            <img src="assets/gabriela.jpg" alt="" width="640" height="800" loading="lazy">
-            <svg class="spark" viewBox="0 0 60 60"><path d="M30 4v14M48 12l-9 10M56 30H42M12 12l9 10"/></svg>
-          </div>
           <ul class="stats hand">
             <li><span class="stats__num" data-count="2">0</span><span>automações em produção</span></li>
             <li><span class="stats__num" data-count="4">0</span><span>projetos no GitHub</span></li>
@@ -148,12 +143,17 @@
         <div class="exp__head reveal">
           <h2 class="stack-title"><span class="tag-box">Experiência</span><span class="tag-box tag-box--pink tag-box--offset">na Vesti</span></h2>
           <div class="exp__role">
-            <p class="hand exp__when"><span class="live-dot"></span>estágio · 2026 — atual</p>
-            <h3>Automação &amp; Dados</h3>
+            <p class="hand exp__when"><span class="live-dot"></span>estágio no financeiro · abril 2026 — atual</p>
+            <h3>De planilhas a automações</h3>
             <p>
-              Entrei para tirar trabalho repetitivo das costas do time. Hoje cuido de rotinas que rodam sozinhas na
-              nuvem e de painéis que mostram, num só lugar, o que precisa de atenção. Participo de tudo: do
-              levantamento com quem usa até o código, a publicação e a manutenção.
+              Fui contratada para <strong>gerenciar as planilhas</strong> do financeiro. No dia a dia, vi quanto tempo
+              o time gastava com tarefas repetitivas e <strong>propus automatizar esses processos</strong> com
+              automações criadas por mim, colocando em prática o que aprendo na faculdade.
+            </p>
+            <p>
+              Em Gestão da Tecnologia da Informação, estudo como usar a tecnologia para <strong>impulsionar o
+              negócio</strong> e <strong>otimizar o tempo dos processos</strong> nas empresas. A ideia foi aprovada e hoje
+              eu cuido de tudo: do levantamento com quem usa até o código, a publicação e a manutenção.
             </p>
             <ul class="tags"><li>Python</li><li>GitHub Actions</li><li>APIs REST</li><li>Google Sheets API</li><li>JavaScript</li></ul>
           </div>
@@ -196,7 +196,7 @@
             </div>
             <p class="case__how"><b>Como funciona:</b> busca as faturas de várias contas via API, cruza por CPF/CNPJ (com nome como reserva) e escreve o resultado e um resumo executivo direto na planilha do time.</p>
             <ul class="tags"><li>Python</li><li>GitHub Actions</li><li>API REST</li><li>Google Sheets API</li><li>n8n</li></ul>
-            <p class="project__note hand">🔒 código e dados confidenciais · descrição genérica</p>
+            <p class="project__note hand">código e dados confidenciais · descrição genérica</p>
           </article>
 
           <!-- PAINEL -->
@@ -228,7 +228,7 @@
             </div>
             <p class="case__how"><b>Como funciona:</b> uma rotina diária coleta os dados, aplica regras de negócio para ignorar casos já tratados e publica o painel com busca, filtros e trava contra execução duplicada.</p>
             <ul class="tags"><li>Python</li><li>JavaScript</li><li>HTML/CSS</li><li>GitHub Actions</li><li>API REST</li></ul>
-            <p class="project__note hand">🔒 código e dados confidenciais · descrição genérica</p>
+            <p class="project__note hand">código e dados confidenciais · descrição genérica</p>
           </article>
         </div>
       </div>
@@ -245,37 +245,31 @@
         </div>
         <div class="skills">
           <article class="note reveal">
-            <div class="note__icon" aria-hidden="true">🐍</div>
             <h3>Python &amp; Automação</h3>
             <p>Scripts que consomem APIs, cruzam dados e geram relatórios sem intervenção manual.</p>
             <ul class="tags"><li>Python</li><li>APIs REST</li><li>n8n</li><li>Agendamentos</li></ul>
           </article>
           <article class="note reveal">
-            <div class="note__icon" aria-hidden="true">🗄️</div>
             <h3>Banco de Dados</h3>
             <p>Modelagem relacional, consultas e organização de dados para consistência e performance.</p>
             <ul class="tags"><li>MySQL</li><li>SQL</li><li>Modelagem</li><li>Google Sheets API</li></ul>
           </article>
           <article class="note reveal">
-            <div class="note__icon" aria-hidden="true">🎨</div>
             <h3>Front-end</h3>
             <p>Interfaces responsivas, limpas e fáceis de usar, do layout à interação.</p>
             <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsivo</li></ul>
           </article>
           <article class="note reveal">
-            <div class="note__icon" aria-hidden="true">⚙️</div>
             <h3>DevOps &amp; Versionamento</h3>
             <p>Código versionado e pipelines que rodam na nuvem em horários programados.</p>
             <ul class="tags"><li>Git</li><li>GitHub</li><li>GitHub Actions</li><li>Secrets</li></ul>
           </article>
           <article class="note reveal">
-            <div class="note__icon" aria-hidden="true">🤖</div>
             <h3>Desenvolvimento com IA</h3>
             <p>Uso de assistentes de IA para acelerar a construção, depuração e documentação de soluções.</p>
             <ul class="tags"><li>Claude</li><li>Prompting</li><li>Debug assistido</li></ul>
           </article>
           <article class="note reveal">
-            <div class="note__icon" aria-hidden="true">🛡️</div>
             <h3>Infra &amp; Suporte</h3>
             <p>Base sólida em redes, hardware, software e conceitos de cibersegurança.</p>
             <ul class="tags"><li>Redes</li><li>Cibersegurança</li><li>Java</li><li>Pacote Office</li></ul>
@@ -293,12 +287,12 @@
           <div class="extras__box reveal">
             <h3 class="hand">cursos &amp; certificações</h3>
             <ul class="certs">
-              <li><span>Banco de Dados</span><small>Alura · 2026</small></li>
+              <li><span>Vendas Digitais</span><small>Alura · 2026</small></li>
+              <li><span>Planejamento e Gestão de Projetos</span><small>Udemy · 2026</small></li>
               <li><span>Introdução à Cibersegurança</span><small>Cisco Networking Academy · 2025</small></li>
               <li><span>Banco de Dados e Programação</span><small>Senac Nações Unidas · 2025</small></li>
               <li><span>Infraestrutura de Redes</span><small>Senac Nações Unidas · 2024</small></li>
               <li><span>Pacote Office e Manutenção de Computadores</span><small>Senac Nações Unidas · 2023</small></li>
-              <li><span>Planejamento e Gestão de Projetos</span><small>Udemy</small></li>
             </ul>
           </div>
         </div>
@@ -319,10 +313,11 @@
         <ol class="timeline">
           <li class="tl reveal">
             <span class="tl__dot tl__dot--live"></span>
-            <span class="tl__date hand">2026 — atual</span>
-            <h3>Automação &amp; Dados</h3>
+            <span class="tl__date hand">abril 2026 — atual</span>
+            <h3>Estagiária no Setor Financeiro</h3>
             <p class="tl__org">Vesti</p>
             <ul>
+              <li>Contratada para gerenciar planilhas, propus ao time automatizar os processos com automações próprias.</li>
               <li>Auditoria de faturamento que levava uma semana virou uma rotina automática que roda toda madrugada.</li>
               <li>Planilha semanal de 3 horas transformada em um painel que se atualiza sozinho todos os dias.</li>
               <li>Migração de um fluxo instável no n8n para Python + GitHub Actions, mais confiável e fácil de manter.</li>
@@ -366,7 +361,7 @@
           <article class="project reveal" data-cat="pessoal">
             <div class="project__top">
               <span class="project__num">01</span>
-              <span class="project__label hand">🚀 projeto principal</span>
+              <span class="project__label hand">projeto principal</span>
             </div>
             <h3>GestorPro</h3>
             <p class="project__tagline">Controle de vendas e estoque para pequenos empreendedores.</p>
@@ -387,7 +382,7 @@
           <article class="project reveal" data-cat="pessoal">
             <div class="project__top">
               <span class="project__num">02</span>
-              <span class="project__label hand">🗄️ banco de dados</span>
+              <span class="project__label hand">banco de dados</span>
             </div>
             <h3>E-commerce de Móveis — Modelagem</h3>
             <p class="project__tagline">Banco relacional completo para uma loja on-line.</p>
@@ -408,7 +403,7 @@
           <article class="project reveal" data-cat="pessoal">
             <div class="project__top">
               <span class="project__num">03</span>
-              <span class="project__label hand">✈️ front-end · Alura</span>
+              <span class="project__label hand">front-end · Alura</span>
             </div>
             <h3>Jornada Viagens</h3>
             <p class="project__tagline">Site de agência de viagens com destinos e pacotes.</p>
@@ -429,7 +424,7 @@
           <article class="project reveal" data-cat="pessoal">
             <div class="project__top">
               <span class="project__num">04</span>
-              <span class="project__label hand">🎨 interface</span>
+              <span class="project__label hand">interface</span>
             </div>
             <h3>Este portfólio</h3>
             <p class="project__tagline">Site pessoal feito à mão, sem frameworks.</p>
@@ -460,7 +455,7 @@
         </div>
         <div class="contact__photo reveal">
           <figure class="polaroid polaroid--small">
-            <img src="assets/gabriela.jpg" alt="" width="640" height="800" loading="lazy">
+            <img src="assets/gabriela.jpg?v=2" alt="" width="640" height="800" loading="lazy">
           </figure>
           <span class="blob blob--contact hand">aberta a novos<br>desafios</span>
         </div>
@@ -476,9 +471,9 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <a href="#inicio" class="logo">gabi<span>.dev</span></a>
+      <a href="#inicio" class="logo">gabi <span>ramos</span></a>
       <p class="hand">automatizando o repetitivo, um script por vez.</p>
-      <p class="footer__copy">© <span id="year">2026</span> Gabriela Ramos · feito à mão com 💗 e muito café</p>
+      <p class="footer__copy">© <span id="year">2026</span> Gabriela Ramos</p>
     </div>
   </footer>
 
