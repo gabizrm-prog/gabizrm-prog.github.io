@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriela Ramos | Portfólio</title>
+  <meta name="description" content="Portfólio de Gabriela Ramos — estudante de Gestão de TI, com foco em automação, dados e desenvolvimento front-end.">
+  <meta property="og:title" content="Gabriela Ramos | Portfólio">
+  <meta property="og:description" content="Automação, dados e desenvolvimento web.">
+  <meta property="og:image" content="assets/gabriela.jpg">
+  <meta name="theme-color" content="#0b0a10">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23c084fc'/%3E%3Cstop offset='1' stop-color='%23f472b6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23g)'/%3E%3Ctext x='16' y='21.5' font-family='system-ui,sans-serif' font-size='14' font-weight='700' fill='white' text-anchor='middle'%3EGR%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb--1"></span>
+    <span class="orb orb--2"></span>
+    <span class="orb orb--3"></span>
+  </div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="logo">gabi<span>.dev</span></a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Skills</a>
+        <a href="#trajetoria">Trajetória</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato" class="nav__cta">Contato</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <span class="badge"><span class="badge__dot"></span>Automação &amp; Dados na Vesti</span>
+          <p class="hero__hello">Olá, eu sou</p>
+          <h1 class="hero__name">Gabriela <span class="grad">Ramos</span></h1>
+          <p class="hero__role"><span class="mono">&gt;</span> <span id="typed"></span><span class="caret">|</span></p>
+          <p class="hero__desc">
+            Estudante de <strong>Gestão da Tecnologia da Informação</strong> e técnica em TI pelo Senac.
+            Crio automações que economizam horas de trabalho manual, painéis que transformam dados em decisão
+            e interfaces web com <strong>HTML, CSS, JavaScript</strong> e <strong>Python</strong>.
+          </p>
+          <div class="hero__actions">
+            <a href="#projetos" class="btn btn--primary">Ver projetos
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="assets/curriculo.pdf" class="btn btn--ghost" target="_blank" rel="noopener">Baixar CV
+              <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <div class="hero__social">
+            <a href="https://github.com/gabizrm-prog" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z" fill="currentColor"/></svg></a>
+            <a href="https://www.linkedin.com/in/gabriela-ramos-56186b2b9" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z" fill="currentColor"/></svg></a>
+            <a href="mailto:gabriela.ramossilva68@gmail.com" aria-label="E-mail"><svg viewBox="0 0 24 24"><path d="M3 6.5A2.5 2.5 0 0 1 5.5 4h13A2.5 2.5 0 0 1 21 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5v-11Zm2 .4v.1l7 4.9 7-4.9v-.1a.5.5 0 0 0-.5-.5h-13a.5.5 0 0 0-.5.5Zm14 2.5-6.43 4.5a1 1 0 0 1-1.14 0L5 9.4v8.1c0 .28.22.5.5.5h13a.5.5 0 0 0 .5-.5V9.4Z" fill="currentColor"/></svg></a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="photo">
+            <div class="photo__ring"></div>
+            <img src="assets/gabriela.jpg" alt="Foto de Gabriela Ramos" width="640" height="800">
+          </div>
+          <div class="float-card float-card--1">
+            <span class="float-card__icon">⚡</span>
+            <div><strong>Automação diária</strong><small>roda sozinha às 5h</small></div>
+          </div>
+          <div class="float-card float-card--2">
+            <span class="float-card__icon">📊</span>
+            <div><strong>Dados → decisão</strong><small>painéis em tempo real</small></div>
+          </div>
+        </div>
+      </div>
+      <a href="#sobre" class="scroll-cue" aria-label="Rolar para baixo"><span></span></a>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">01 — Sobre mim</span>
+          <h2>Transformando processos manuais em <span class="grad">soluções automáticas</span></h2>
+        </div>
+        <div class="about">
+          <div class="about__text reveal">
+            <p>
+              Sou formada <strong>Técnica em Informática pelo Senac Nações Unidas</strong> e curso
+              <strong>Gestão da Tecnologia da Informação</strong> no Centro Universitário Senac Santo Amaro.
+            </p>
+            <p>
+              Hoje atuo na <strong>Vesti</strong>, onde desenvolvo automações e painéis de dados para a área financeira.
+              São rotinas que conferem faturas todos os dias, apontam divergências e mostram, num só lugar, o que
+              precisa de atenção. Gosto de olhar para uma tarefa repetitiva e pensar: <em>“isso pode rodar sozinho”</em>.
+            </p>
+            <p>
+              Também tenho interesse em <strong>front-end</strong> e <strong>data science</strong>. Sou comunicativa,
+              organizada e aprendo rápido na prática, construindo projetos de verdade.
+            </p>
+          </div>
+          <div class="stats reveal">
+            <div class="stat"><span class="stat__num" data-count="5">0</span><span class="stat__label">Projetos no GitHub</span></div>
+            <div class="stat"><span class="stat__num" data-count="2">0</span><span class="stat__label">Automações em produção</span></div>
+            <div class="stat"><span class="stat__num" data-count="10" data-suffix="+">0</span><span class="stat__label">Tecnologias usadas</span></div>
+            <div class="stat"><span class="stat__num" data-count="6">0</span><span class="stat__label">Cursos e certificações</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">02 — Skills</span>
+          <h2>Ferramentas que eu <span class="grad">uso no dia a dia</span></h2>
+        </div>
+        <div class="skills">
+          <article class="skill reveal">
+            <div class="skill__icon">🐍</div>
+            <h3>Python &amp; Automação</h3>
+            <p>Scripts que consomem APIs, cruzam dados e geram relatórios sem intervenção manual.</p>
+            <ul class="tags"><li>Python</li><li>APIs REST</li><li>n8n</li><li>Agendamentos</li></ul>
+          </article>
+          <article class="skill reveal">
+            <div class="skill__icon">🗄️</div>
+            <h3>Banco de Dados</h3>
+            <p>Modelagem relacional, consultas e organização de dados para consistência e performance.</p>
+            <ul class="tags"><li>MySQL</li><li>SQL</li><li>Modelagem</li><li>Google Sheets API</li></ul>
+          </article>
+          <article class="skill reveal">
+            <div class="skill__icon">🎨</div>
+            <h3>Front-end</h3>
+            <p>Interfaces responsivas, limpas e fáceis de usar, do layout à interação.</p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsivo</li></ul>
+          </article>
+          <article class="skill reveal">
+            <div class="skill__icon">⚙️</div>
+            <h3>DevOps &amp; Versionamento</h3>
+            <p>Código versionado e pipelines que rodam na nuvem em horários programados.</p>
+            <ul class="tags"><li>Git</li><li>GitHub</li><li>GitHub Actions</li><li>Secrets</li></ul>
+          </article>
+          <article class="skill reveal">
+            <div class="skill__icon">🤖</div>
+            <h3>Desenvolvimento com IA</h3>
+            <p>Uso de assistentes de IA para acelerar a construção, depuração e documentação de soluções.</p>
+            <ul class="tags"><li>Claude</li><li>Prompting</li><li>Debug assistido</li></ul>
+          </article>
+          <article class="skill reveal">
+            <div class="skill__icon">🛡️</div>
+            <h3>Infra &amp; Suporte</h3>
+            <p>Base sólida em redes, hardware, software e conceitos de cibersegurança.</p>
+            <ul class="tags"><li>Redes</li><li>Cibersegurança</li><li>Java</li><li>Pacote Office</li></ul>
+          </article>
+        </div>
+
+        <div class="soft reveal">
+          <h3>Soft skills</h3>
+          <ul class="soft__list">
+            <li>Comunicação</li><li>Organização</li><li>Proatividade</li><li>Trabalho em equipe</li>
+            <li>Liderança</li><li>Resolução de problemas</li><li>Criatividade</li><li>Aprendizado contínuo</li>
+          </ul>
+        </div>
+
+        <div class="certs reveal">
+          <h3>Cursos &amp; certificações</h3>
+          <div class="certs__grid">
+            <div class="cert"><span>Banco de Dados</span><small>Alura · 2026</small></div>
+            <div class="cert"><span>Introdução à Cibersegurança</span><small>Cisco Networking Academy · 2025</small></div>
+            <div class="cert"><span>Banco de Dados e Programação</span><small>Senac Nações Unidas · 2025</small></div>
+            <div class="cert"><span>Infraestrutura de Redes</span><small>Senac Nações Unidas · 2024</small></div>
+            <div class="cert"><span>Pacote Office e Manutenção de Computadores</span><small>Senac Nações Unidas · 2023</small></div>
+            <div class="cert"><span>Planejamento e Gestão de Projetos</span><small>Udemy</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAJETÓRIA -->
+    <section class="section" id="trajetoria">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">03 — Trajetória</span>
+          <h2>Por onde eu <span class="grad">passei</span></h2>
+        </div>
+        <ol class="timeline">
+          <li class="tl reveal">
+            <span class="tl__dot tl__dot--live"></span>
+            <span class="tl__date">2026 — atual</span>
+            <h3>Automação &amp; Dados</h3>
+            <p class="tl__org">Vesti</p>
+            <ul>
+              <li>Criação de uma auditoria automática de faturamento que roda todos os dias na nuvem.</li>
+              <li>Desenvolvimento de um painel de inadimplência compartilhado com o time.</li>
+              <li>Migração de um fluxo instável no n8n para Python + GitHub Actions, mais confiável e fácil de manter.</li>
+            </ul>
+            <ul class="tags"><li>Python</li><li>GitHub Actions</li><li>APIs</li><li>Google Sheets</li></ul>
+          </li>
+          <li class="tl reveal">
+            <span class="tl__dot"></span>
+            <span class="tl__date">2026 — em andamento</span>
+            <h3>Gestão da Tecnologia da Informação</h3>
+            <p class="tl__org">Centro Universitário Senac Santo Amaro</p>
+            <ul><li>Graduação com foco em gestão de projetos, sistemas e dados.</li></ul>
+          </li>
+          <li class="tl reveal">
+            <span class="tl__dot"></span>
+            <span class="tl__date">Concluído em 2025</span>
+            <h3>Técnico em Informática — Integrado ao Ensino Médio</h3>
+            <p class="tl__org">Senac Nações Unidas</p>
+            <ul>
+              <li>Banco de dados, programação, redes, suporte técnico e cibersegurança.</li>
+              <li>Membro da Oficina de Foguetes (OBAFOG 2025) e do Ateliê de Políticas Públicas.</li>
+            </ul>
+            <ul class="tags"><li>Java</li><li>MySQL</li><li>Redes</li><li>HTML/CSS</li></ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">04 — Projetos</span>
+          <h2>Coisas que eu <span class="grad">construí</span></h2>
+        </div>
+
+        <div class="filters reveal" role="tablist">
+          <button class="filter is-active" data-filter="all">Todos</button>
+          <button class="filter" data-filter="trabalho">Profissionais</button>
+          <button class="filter" data-filter="pessoal">Pessoais</button>
+        </div>
+
+        <div class="projects">
+          <!-- VESTI 1 -->
+          <article class="project project--featured reveal" data-cat="trabalho">
+            <div class="project__top">
+              <span class="project__label">💼 Projeto profissional · Vesti</span>
+              <span class="project__status"><span class="badge__dot"></span>Em produção</span>
+            </div>
+            <h3>Auditoria Automática de Faturamento</h3>
+            <p class="project__tagline">Conciliação diária entre o gateway de pagamentos e a planilha de controle.</p>
+            <p>
+              Antes, conferir se cada cliente foi cobrado corretamente era um trabalho manual, linha por linha.
+              Construí uma rotina que, todo dia de madrugada, busca as faturas de várias contas no gateway de
+              pagamentos, cruza com a planilha de planos e gera um relatório com tudo o que não bate.
+            </p>
+            <h4>Funcionalidades</h4>
+            <ul class="project__features">
+              <li>Busca automática de faturas em múltiplas contas via API</li>
+              <li>Cruzamento por documento (CPF/CNPJ), com nome como alternativa</li>
+              <li>Detecção de divergências: valor, ausência, status e vencimento</li>
+              <li>Coluna de “situação” explicando cada caso em linguagem simples</li>
+              <li>Resumo executivo e resumo por cliente gerados automaticamente</li>
+              <li>Agendamento diário na nuvem, sem precisar de computador ligado</li>
+            </ul>
+            <ul class="tags"><li>Python</li><li>GitHub Actions</li><li>API REST</li><li>Google Sheets API</li><li>n8n</li></ul>
+            <p class="project__note">🔒 Código e dados confidenciais. Descrição genérica, sem informações reais.</p>
+          </article>
+
+          <!-- VESTI 2 -->
+          <article class="project project--featured reveal" data-cat="trabalho">
+            <div class="project__top">
+              <span class="project__label">💼 Projeto profissional · Vesti</span>
+              <span class="project__status"><span class="badge__dot"></span>Em produção</span>
+            </div>
+            <h3>Painel de Inadimplência</h3>
+            <p class="project__tagline">Faturas vencidas organizadas por conta, atualizadas todo dia.</p>
+            <p>
+              Um painel web compartilhado com o time que mostra quais clientes estão com pagamentos em atraso,
+              há quantos dias e em qual conta. Ele se atualiza sozinho uma vez por dia e virou a referência da
+              equipe para cobranças e bloqueios.
+            </p>
+            <h4>Funcionalidades</h4>
+            <ul class="project__features">
+              <li>Agrupamento por conta, com busca e filtros por vencimento</li>
+              <li>Regras de negócio para ignorar casos antigos ou já tratados</li>
+              <li>Histórico de faturas canceladas visível por alguns dias</li>
+              <li>Aba de anotações colaborativas para o time registrar contatos</li>
+              <li>Atualização automática diária com proteção contra execução duplicada</li>
+            </ul>
+            <ul class="tags"><li>Python</li><li>JavaScript</li><li>HTML/CSS</li><li>GitHub Actions</li><li>API REST</li></ul>
+            <p class="project__note">🔒 Código e dados confidenciais. Descrição genérica, sem informações reais.</p>
+          </article>
+
+          <!-- GESTORPRO -->
+          <article class="project reveal" data-cat="pessoal">
+            <div class="project__top">
+              <span class="project__label">🚀 Projeto principal</span>
+            </div>
+            <h3>GestorPro</h3>
+            <p class="project__tagline">Controle de vendas e estoque para pequenos empreendedores.</p>
+            <p>
+              Muitos pequenos negócios ainda controlam tudo em cadernos ou planilhas bagunçadas. O GestorPro
+              oferece um jeito simples de registrar vendas, acompanhar o estoque e tomar decisões melhores.
+            </p>
+            <ul class="project__features">
+              <li>Cadastro de produtos e controle de estoque</li>
+              <li>Registro de vendas</li>
+              <li>Estrutura de banco de dados em SQL</li>
+            </ul>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>SQL</li></ul>
+            <a href="https://github.com/gabizrm-prog/GestorPro" class="btn btn--small" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+          </article>
+
+          <!-- BANCO -->
+          <article class="project reveal" data-cat="pessoal">
+            <div class="project__top">
+              <span class="project__label">🗄️ Banco de dados</span>
+            </div>
+            <h3>E-commerce de Móveis — Modelagem</h3>
+            <p class="project__tagline">Banco relacional completo para uma loja on-line.</p>
+            <p>
+              Modelagem de um e-commerce de móveis com usuários, produtos, categorias, pedidos, itens de pedido,
+              estoque e pagamentos, pensada para manter a consistência e facilitar consultas e manutenção.
+            </p>
+            <ul class="project__features">
+              <li>Entidades e relacionamentos normalizados</li>
+              <li>Chaves estrangeiras garantindo integridade</li>
+              <li>Estrutura pronta para consultas de vendas e estoque</li>
+            </ul>
+            <ul class="tags"><li>MySQL</li><li>SQL</li><li>Modelagem</li></ul>
+            <a href="https://github.com/gabizrm-prog/BANCO-DE-DADOS" class="btn btn--small" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+          </article>
+
+          <!-- VIAGENS -->
+          <article class="project reveal" data-cat="pessoal">
+            <div class="project__top">
+              <span class="project__label">✈️ Front-end · Alura</span>
+            </div>
+            <h3>Jornada Viagens</h3>
+            <p class="project__tagline">Site de agência de viagens com destinos e pacotes.</p>
+            <p>
+              Site desenvolvido durante a formação de front-end da Alura, com páginas de destinos, categorias e
+              pacotes, praticando layout, componentização de CSS e boas práticas de HTML semântico.
+            </p>
+            <ul class="project__features">
+              <li>Múltiplas páginas (início e pacotes)</li>
+              <li>CSS organizado por componentes</li>
+              <li>Layout com seções de destinos e categorias</li>
+            </ul>
+            <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+            <a href="https://github.com/gabizrm-prog/viagens" class="btn btn--small" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+          </article>
+
+          <!-- PORTFOLIO -->
+          <article class="project reveal" data-cat="pessoal">
+            <div class="project__top">
+              <span class="project__label">🎨 Interface</span>
+            </div>
+            <h3>Este portfólio</h3>
+            <p class="project__tagline">Site pessoal com animações, responsivo e sem frameworks.</p>
+            <p>
+              Evolução dos meus portfólios anteriores: HTML, CSS e JavaScript puros, com animações ao rolar,
+              contadores, filtro de projetos e publicação no GitHub Pages.
+            </p>
+            <ul class="project__features">
+              <li>Design escuro com efeito de vidro</li>
+              <li>Totalmente responsivo</li>
+              <li>Acessível (respeita “reduzir movimento”)</li>
+            </ul>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Pages</li></ul>
+            <a href="https://github.com/gabizrm-prog/gabizrm-prog.github.io" class="btn btn--small" target="_blank" rel="noopener">Ver no GitHub ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="contact reveal">
+          <span class="eyebrow">05 — Contato</span>
+          <h2>Vamos <span class="grad">conversar?</span></h2>
+          <p>Estou aberta a oportunidades de estágio, projetos e trocas sobre automação, dados e desenvolvimento. Me chama!</p>
+          <div class="contact__links">
+            <a href="mailto:gabriela.ramossilva68@gmail.com" class="contact__item">
+              <span class="contact__icon">✉️</span><span><small>E-mail</small>gabriela.ramossilva68@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/gabriela-ramos-56186b2b9" target="_blank" rel="noopener" class="contact__item">
+              <span class="contact__icon">💼</span><span><small>LinkedIn</small>Gabriela Ramos</span>
+            </a>
+            <a href="https://github.com/gabizrm-prog" target="_blank" rel="noopener" class="contact__item">
+              <span class="contact__icon">🐙</span><span><small>GitHub</small>@gabizrm-prog</span>
+            </a>
+            <a href="https://www.instagram.com/gabizrm/" target="_blank" rel="noopener" class="contact__item">
+              <span class="contact__icon">📸</span><span><small>Instagram</small>@gabizrm</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="#inicio" class="logo">gabi<span>.dev</span></a>
+        <p>Automatizando o repetitivo, um script por vez.</p>
+      </div>
+      <p class="footer__copy">© <span id="year">2026</span> Gabriela Ramos · Feito com 💜 e muito café.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
