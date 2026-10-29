@@ -341,7 +341,6 @@ strong { font-weight: 700; }
 /* contato */
 .contact { padding-bottom: 130px; }
 .contact__grid { display: grid; gap: 56px 64px; grid-template-columns: minmax(0, 1fr); align-items: center; }
-@media (min-width: 900px) { .contact__grid { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); } .contact__rows { grid-column: 1 / -1; } }
 .contact__text { margin-top: 22px; max-width: 30em; color: var(--muted-on-pink); font-size: 1.08rem; }
 .contact__photo { position: relative; justify-self: center; width: min(250px, 70%); }
 .polaroid--small { padding: 12px 12px 40px; transform: rotate(-4deg); background: #111; }
