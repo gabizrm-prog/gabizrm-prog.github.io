@@ -396,13 +396,15 @@ strong { font-weight: 700; }
 .exp__role h3 { font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: 1.5rem; line-height: 1.1; margin: 10px 0 8px; }
 .exp__role p:not(.exp__when) { color: #4A3540; margin-bottom: 14px; }
 
-.impact { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 2.5px solid var(--ink); margin-bottom: 56px; }
-@media (min-width: 860px) { .impact { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
-.impact li { display: flex; flex-direction: column; gap: 2px; padding: 18px 16px 18px 0; border-bottom: 2.5px solid var(--ink); }
-.impact li + li { padding-left: 16px; border-left: 2px dashed rgba(20, 10, 14, .35); }
-@media (max-width: 859px) { .impact li:nth-child(3) { padding-left: 0; border-left: 0; } }
-.impact b { font-weight: 400; font-size: clamp(2.4rem, 5vw, 3.4rem); line-height: 1; color: var(--pink-deep); }
-.impact span { font-size: 1.15rem; line-height: 1.2; color: var(--ink); }
+.impact { display: grid; gap: 18px; grid-template-columns: minmax(0, 1fr); margin-bottom: 56px; }
+@media (min-width: 760px) { .impact { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.impact li { display: flex; flex-direction: column; gap: 10px; padding: 18px 20px; background: var(--paper-white); border: 2px solid var(--ink); border-radius: 6px; box-shadow: 5px 5px 0 var(--pink); }
+.impact__what { font-weight: 700; font-size: .98rem; color: var(--ink); }
+.impact__row { display: flex; align-items: baseline; gap: 12px; }
+.impact__label { flex: 0 0 52px; font-size: 1rem; color: #6E5A63; }
+.impact__label--now { color: var(--pink-deep); }
+.impact s { font-size: 1.1rem; color: #6E5A63; text-decoration-thickness: 1.5px; }
+.impact b { font-family: var(--display); font-weight: 400; font-size: 1.6rem; line-height: 1.1; color: var(--pink-deep); }
 
 .cases { display: grid; gap: 40px; }
 .case {
@@ -447,6 +449,5 @@ strong { font-weight: 700; }
 .tag-box { white-space: nowrap; }
 .exp__head .tag-box { font-size: clamp(2.1rem, 4.6vw, 3.7rem); }
 @media (max-width: 480px) { .tag-box--offset { margin-left: .35em; } .tag-box { font-size: clamp(1.9rem, 9.4vw, 2.6rem); } .hero h1 .tag-box { font-size: clamp(2.4rem, 12vw, 3.2rem); } }
-.impact b { font-size: clamp(1.8rem, 3vw, 2.5rem); line-height: 1.05; }
 .ba strong { font-weight: 700; color: inherit; }
 .ba__col--after strong { color: var(--pink-deep); }
