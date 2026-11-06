@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Patrick+Hand+SC&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
   <!-- NAV -->
@@ -140,126 +140,194 @@
       <div class="container">
         <div class="exp__head reveal">
           <h2 class="stack-title"><span class="tag-box">Experiência</span><span class="tag-box tag-box--pink tag-box--offset">na Vesti</span></h2>
+          <div class="exp__intro">
+            <p class="exp__when hand">estágio no financeiro · abril 2026 — atual</p>
+            <p>No financeiro, encontrei tarefas repetitivas que tomavam horas do time. Para cada uma, entendi o problema e criei uma automação. Abaixo está o que era cada problema, como resolvi e o que mudou.</p>
+          </div>
         </div>
 
-        <ul class="impact reveal">
+        <ul class="impact reveal" aria-label="Resumo do que mudou">
           <li>
-            <span class="impact__what">Tempo da auditoria de faturas</span>
+            <a href="#case-01" class="impact__what">Auditoria de faturas</a>
             <span class="impact__row"><span class="impact__label hand">antes</span><s>1 semana</s></span>
             <span class="impact__row"><span class="impact__label impact__label--now hand">agora</span><b>1 noite</b></span>
           </li>
           <li>
-            <span class="impact__what">Atualização do painel</span>
-            <span class="impact__row"><span class="impact__label hand">antes</span><s>toda segunda, manualmente</s></span>
-            <span class="impact__row"><span class="impact__label impact__label--now hand">agora</span><b>automática, em 4 minutos</b></span>
+            <a href="#case-02" class="impact__what">Painel de inadimplência</a>
+            <span class="impact__row"><span class="impact__label hand">antes</span><s>3 horas por semana</s></span>
+            <span class="impact__row"><span class="impact__label impact__label--now hand">agora</span><b>todo dia, sozinho</b></span>
+          </li>
+          <li>
+            <a href="#case-03" class="impact__what">Faturas do mês</a>
+            <span class="impact__row"><span class="impact__label hand">antes</span><s>uma por uma, à mão</s></span>
+            <span class="impact__row"><span class="impact__label impact__label--now hand">agora</span><b>todas de uma vez</b></span>
           </li>
         </ul>
 
         <div class="cases">
-          <!-- AUDITORIA -->
-          <article class="case reveal">
-            <div class="case__top">
+          <article class="case reveal" id="case-01">
+            <header class="case__head">
               <span class="project__num">01</span>
-              <span class="project__status hand">pronto</span>
-            </div>
-            <h3>Auditoria Automática de Faturamento</h3>
-            <p class="case__lead">Uma rotina que confere, toda madrugada, se cada cliente foi cobrado do jeito certo.</p>
-            <div class="ba">
-              <div class="ba__col ba__col--before">
-                <span class="hand ba__tag">antes</span>
-                <ul>
-                  <li>A auditoria levava <strong>uma semana inteira</strong> para ficar pronta</li>
-                  <li>Conferência manual, cliente por cliente, entre o sistema de pagamentos e a planilha</li>
-                  <li>Um fluxo antigo no n8n que falhava sem avisar</li>
-                </ul>
+              <div class="case__title">
+                <h3>Auditoria de Faturamento</h3>
+                <p class="case__lead">Confere, toda madrugada, se cada cliente foi cobrado do jeito certo.</p>
               </div>
-              <span class="ba__arrow" aria-hidden="true">→</span>
-              <div class="ba__col ba__col--after">
-                <span class="hand ba__tag">depois</span>
-                <ul>
-                  <li>Roda sozinha <strong>toda madrugada</strong>: o relatório já está pronto quando o time chega</li>
-                  <li>Mostra só o que não bate, explicado em linguagem simples</li>
-                  <li>Migrei para Python + GitHub Actions: estável, versionado e fácil de manter</li>
-                </ul>
+            </header>
+
+            <div class="ps">
+              <div class="ps__box ps__box--problem">
+                <span class="ps__tag hand">o problema</span>
+                <p>Para saber se cada cliente estava sendo cobrado certo, era preciso comparar <strong>à mão</strong> o sistema de pagamentos com a planilha, cliente por cliente. A conferência levava <strong>uma semana</strong>. Um fluxo antigo no n8n tentava ajudar, mas falhava sem avisar.</p>
+              </div>
+              <span class="ps__arrow" aria-hidden="true">→</span>
+              <div class="ps__box ps__box--solution">
+                <span class="ps__tag hand">como resolvi</span>
+                <p>Criei uma rotina em <strong>Python</strong> que roda sozinha toda madrugada no GitHub Actions. Ela busca as faturas de todas as contas pela API, cruza com a planilha por CPF/CNPJ e escreve na planilha <strong>só o que não bate</strong>, com um resumo para o time.</p>
               </div>
             </div>
-            <p class="case__how"><b>Como funciona:</b> busca as faturas de várias contas via API, cruza por CPF/CNPJ (com nome como reserva) e escreve o resultado e um resumo executivo direto na planilha do time.</p>
-            <ul class="tags"><li>Python</li><li>GitHub Actions</li><li>API REST</li><li>Google Sheets API</li><li>n8n</li></ul>
-            <p class="project__note hand">código e dados confidenciais · descrição genérica</p>
+
+            <div class="cmp" role="table" aria-label="Como era antes e como é agora: Auditoria de Faturamento">
+              <div class="cmp__row cmp__row--head" role="row">
+                <span role="columnheader"><span class="sr-only">Ponto</span></span>
+                <span class="hand" role="columnheader">como era antes</span>
+                <span class="hand" role="columnheader">como é agora</span>
+              </div>
+                <div class="cmp__row" role="row">
+                  <span class="cmp__what" role="rowheader">Tempo para ficar pronta</span>
+                  <span class="cmp__before" role="cell"><span class="cmp__mini hand" aria-hidden="true">antes</span>1 semana</span>
+                  <span class="cmp__now" role="cell"><span class="cmp__mini hand" aria-hidden="true">agora</span>1 noite, sem ninguém</span>
+                </div>
+                <div class="cmp__row" role="row">
+                  <span class="cmp__what" role="rowheader">Como era feita</span>
+                  <span class="cmp__before" role="cell"><span class="cmp__mini hand" aria-hidden="true">antes</span>À mão, cliente por cliente</span>
+                  <span class="cmp__now" role="cell"><span class="cmp__mini hand" aria-hidden="true">agora</span>Automática, todas as contas de uma vez</span>
+                </div>
+                <div class="cmp__row" role="row">
+                  <span class="cmp__what" role="rowheader">O que o time recebe</span>
+                  <span class="cmp__before" role="cell"><span class="cmp__mini hand" aria-hidden="true">antes</span>A planilha inteira para revisar</span>
+                  <span class="cmp__now" role="cell"><span class="cmp__mini hand" aria-hidden="true">agora</span>Só as diferenças, explicadas em linguagem simples</span>
+                </div>
+                <div class="cmp__row" role="row">
+                  <span class="cmp__what" role="rowheader">Confiabilidade</span>
+                  <span class="cmp__before" role="cell"><span class="cmp__mini hand" aria-hidden="true">antes</span>Fluxo no n8n que falhava sem avisar</span>
+                  <span class="cmp__now" role="cell"><span class="cmp__mini hand" aria-hidden="true">agora</span>Código em Python, versionado no GitHub</span>
+                </div>
+            </div>
+
+            <footer class="case__foot">
+              <ul class="tags"><li>Python</li><li>GitHub Actions</li><li>API REST</li><li>Google Sheets API</li><li>n8n</li></ul>
+              <p class="project__note hand">código e dados confidenciais · descrição genérica</p>
+            </footer>
           </article>
 
-          <!-- PAINEL -->
-          <article class="case reveal">
-            <div class="case__top">
+          <article class="case reveal" id="case-02">
+            <header class="case__head">
               <span class="project__num">02</span>
-              <span class="project__status hand">pronto</span>
-            </div>
-            <h3>Painel de Inadimplência</h3>
-            <p class="case__lead">Transformei uma planilha manual em um painel web que se atualiza sozinho todos os dias.</p>
-            <div class="ba">
-              <div class="ba__col ba__col--before">
-                <span class="hand ba__tag">antes</span>
-                <ul>
-                  <li>Uma planilha atualizada à mão <strong>uma vez por semana</strong></li>
-                  <li>Cada atualização levava <strong>cerca de 3 horas</strong></li>
-                  <li>Com dados de até uma semana atrás, aconteciam <strong>cobranças erradas</strong></li>
-                </ul>
+              <div class="case__title">
+                <h3>Painel de Inadimplência</h3>
+                <p class="case__lead">Mostra quais clientes estão com pagamento atrasado, sempre com dados do dia.</p>
               </div>
-              <span class="ba__arrow" aria-hidden="true">→</span>
-              <div class="ba__col ba__col--after">
-                <span class="hand ba__tag">depois</span>
-                <ul>
-                  <li>Atualização <strong>automática e diária</strong>, sem nenhuma hora de trabalho manual</li>
-                  <li>Dados sempre do dia, evitando as cobranças erradas causadas por informação desatualizada</li>
-                  <li>Virou a referência do time, com anotações colaborativas sobre cada contato</li>
-                </ul>
+            </header>
+
+            <div class="ps">
+              <div class="ps__box ps__box--problem">
+                <span class="ps__tag hand">o problema</span>
+                <p>A lista de clientes com pagamento atrasado ficava numa planilha atualizada <strong>à mão, uma vez por semana</strong>. Cada atualização levava cerca de <strong>3 horas</strong>. Como os dados podiam ter até uma semana de atraso, aconteciam <strong>cobranças erradas</strong>.</p>
+              </div>
+              <span class="ps__arrow" aria-hidden="true">→</span>
+              <div class="ps__box ps__box--solution">
+                <span class="ps__tag hand">como resolvi</span>
+                <p>Fiz uma rotina que roda <strong>todo dia</strong>: coleta os dados, aplica as regras do time para ignorar casos já resolvidos e publica um <strong>painel web</strong> com busca, filtros e anotações sobre cada cliente.</p>
               </div>
             </div>
-            <p class="case__how"><b>Como funciona:</b> uma rotina diária coleta os dados, aplica regras de negócio para ignorar casos já tratados e publica o painel com busca, filtros e trava contra execução duplicada.</p>
-            <ul class="tags"><li>Python</li><li>JavaScript</li><li>HTML/CSS</li><li>GitHub Actions</li><li>API REST</li></ul>
-            <p class="project__note hand">código e dados confidenciais · descrição genérica</p>
+
+            <div class="cmp" role="table" aria-label="Como era antes e como é agora: Painel de Inadimplência">
+              <div class="cmp__row cmp__row--head" role="row">
+                <span role="columnheader"><span class="sr-only">Ponto</span></span>
+                <span class="hand" role="columnheader">como era antes</span>
+                <span class="hand" role="columnheader">como é agora</span>
+              </div>
+                <div class="cmp__row" role="row">
+                  <span class="cmp__what" role="rowheader">Atualização</span>
+                  <span class="cmp__before" role="cell"><span class="cmp__mini hand" aria-hidden="true">antes</span>1 vez por semana, à mão</span>
+                  <span class="cmp__now" role="cell"><span class="cmp__mini hand" aria-hidden="true">agora</span>Todo dia, automática</span>
+                </div>
+                <div class="cmp__row" role="row">
+                  <span class="cmp__what" role="rowheader">Tempo gasto</span>
+                  <span class="cmp__before" role="cell"><span class="cmp__mini hand" aria-hidden="true">antes</span>Cerca de 3 horas</span>
+                  <span class="cmp__now" role="cell"><span class="cmp__mini hand" aria-hidden="true">agora</span>4 minutos, sem ninguém</span>
+                </div>
+                <div class="cmp__row" role="row">
+                  <span class="cmp__what" role="rowheader">Dados</span>
+                  <span class="cmp__before" role="cell"><span class="cmp__mini hand" aria-hidden="true">antes</span>Até 1 semana de atraso</span>
+                  <span class="cmp__now" role="cell"><span class="cmp__mini hand" aria-hidden="true">agora</span>Sempre do dia</span>
+                </div>
+                <div class="cmp__row" role="row">
+                  <span class="cmp__what" role="rowheader">Resultado</span>
+                  <span class="cmp__before" role="cell"><span class="cmp__mini hand" aria-hidden="true">antes</span>Cobranças erradas</span>
+                  <span class="cmp__now" role="cell"><span class="cmp__mini hand" aria-hidden="true">agora</span>Referência do time, com anotações em cada contato</span>
+                </div>
+            </div>
+
+            <footer class="case__foot">
+              <ul class="tags"><li>Python</li><li>JavaScript</li><li>HTML/CSS</li><li>GitHub Actions</li><li>API REST</li></ul>
+              <p class="project__note hand">código e dados confidenciais · descrição genérica</p>
+            </footer>
           </article>
 
-          <!-- FATURAMENTO -->
-          <article class="case reveal">
-            <div class="case__top">
+          <article class="case reveal" id="case-03">
+            <header class="case__head">
               <span class="project__num">03</span>
-              <span class="project__status hand">pronto</span>
-            </div>
-            <h3>Faturamento Mensal Automático</h3>
-            <p class="case__lead">Todo mês, cada cliente de um dos produtos da empresa paga de acordo com quantos usuários usaram a plataforma. Automatizei esse processo de ponta a ponta: dos dados de uso até a fatura pronta para o cliente pagar.</p>
-            <div class="ba">
-              <div class="ba__col ba__col--before">
-                <span class="hand ba__tag">antes</span>
-                <ul>
-                  <li>O relatório de uso de cada cliente vinha do Power BI</li>
-                  <li>Os usuários eram somados na planilha, <strong>cliente por cliente</strong></li>
-                  <li>Cada fatura era <strong>criada à mão</strong> no sistema de pagamentos</li>
-                  <li>Um número digitado errado virava uma cobrança errada</li>
-                </ul>
+              <div class="case__title">
+                <h3>Faturamento Mensal</h3>
+                <p class="case__lead">Gera as faturas do mês sozinho, a partir do uso de cada cliente.</p>
               </div>
-              <span class="ba__arrow" aria-hidden="true">→</span>
-              <div class="ba__col ba__col--after">
-                <span class="hand ba__tag">depois</span>
-                <ul>
-                  <li>Só é preciso <strong>colar o relatório do mês</strong> na planilha</li>
-                  <li>O sistema calcula quanto cada cliente deve e <strong>cria todas as faturas sozinho</strong></li>
-                  <li>Se encontra algum erro, <strong>não cobra ninguém</strong> e avisa por e-mail</li>
-                  <li>Um painel mostra quais clientes já pagaram</li>
-                </ul>
+            </header>
+
+            <div class="ps">
+              <div class="ps__box ps__box--problem">
+                <span class="ps__tag hand">o problema</span>
+                <p>Em um dos produtos da empresa, cada cliente paga conforme <strong>quantos usuários</strong> usaram a plataforma no mês. Os dados vinham do Power BI, eram <strong>somados à mão</strong> na planilha e cada fatura era <strong>criada uma por uma</strong>. Um número digitado errado virava cobrança errada.</p>
+              </div>
+              <span class="ps__arrow" aria-hidden="true">→</span>
+              <div class="ps__box ps__box--solution">
+                <span class="ps__tag hand">como resolvi</span>
+                <p>Criei uma rotina que percebe quando o relatório do mês é colado na planilha, <strong>calcula o valor de cada cliente</strong> (com valor mínimo), <strong>cria todas as faturas</strong> pela API e grava o link de cada uma na planilha. Se algo não bate, ela não cobra ninguém e avisa. Também fiz um painel que mostra quem já pagou.</p>
               </div>
             </div>
-            <div class="steps">
-              <p class="steps__title hand">como funciona, passo a passo</p>
-              <ol>
-                <li><b>Colo o relatório</b><span>Os dados do Power BI vão para uma aba nova da planilha.</span></li>
-                <li><b>O sistema percebe</b><span>A cada 2 horas ele procura a aba do mês e espera a colagem terminar.</span></li>
-                <li><b>Calcula os valores</b><span>Junta os usuários de cada cliente e aplica o valor mínimo.</span></li>
-                <li><b>Cria as faturas</b><span>Envia tudo pela API e grava o link de cada fatura na planilha.</span></li>
-              </ol>
+
+            <div class="cmp" role="table" aria-label="Como era antes e como é agora: Faturamento Mensal">
+              <div class="cmp__row cmp__row--head" role="row">
+                <span role="columnheader"><span class="sr-only">Ponto</span></span>
+                <span class="hand" role="columnheader">como era antes</span>
+                <span class="hand" role="columnheader">como é agora</span>
+              </div>
+                <div class="cmp__row" role="row">
+                  <span class="cmp__what" role="rowheader">O que precisa fazer</span>
+                  <span class="cmp__before" role="cell"><span class="cmp__mini hand" aria-hidden="true">antes</span>Somar e criar cada fatura à mão</span>
+                  <span class="cmp__now" role="cell"><span class="cmp__mini hand" aria-hidden="true">agora</span>Só colar o relatório do mês</span>
+                </div>
+                <div class="cmp__row" role="row">
+                  <span class="cmp__what" role="rowheader">Cálculo dos valores</span>
+                  <span class="cmp__before" role="cell"><span class="cmp__mini hand" aria-hidden="true">antes</span>Cliente por cliente na planilha</span>
+                  <span class="cmp__now" role="cell"><span class="cmp__mini hand" aria-hidden="true">agora</span>Automático, com valor mínimo</span>
+                </div>
+                <div class="cmp__row" role="row">
+                  <span class="cmp__what" role="rowheader">Erros</span>
+                  <span class="cmp__before" role="cell"><span class="cmp__mini hand" aria-hidden="true">antes</span>Um número errado virava cobrança errada</span>
+                  <span class="cmp__now" role="cell"><span class="cmp__mini hand" aria-hidden="true">agora</span>Se algo não bate, nada é enviado e chega um aviso</span>
+                </div>
+                <div class="cmp__row" role="row">
+                  <span class="cmp__what" role="rowheader">Acompanhamento</span>
+                  <span class="cmp__before" role="cell"><span class="cmp__mini hand" aria-hidden="true">antes</span>Conferir fatura por fatura</span>
+                  <span class="cmp__now" role="cell"><span class="cmp__mini hand" aria-hidden="true">agora</span>Painel mostra quem já pagou</span>
+                </div>
             </div>
-            <ul class="tags"><li>Python</li><li>GitHub Actions</li><li>API REST</li><li>Google Sheets API</li><li>Power BI</li></ul>
-            <p class="project__note hand">código e dados confidenciais · descrição genérica</p>
+
+            <footer class="case__foot">
+              <ul class="tags"><li>Python</li><li>GitHub Actions</li><li>API REST</li><li>Google Sheets API</li><li>Power BI</li></ul>
+              <p class="project__note hand">código e dados confidenciais · descrição genérica</p>
+            </footer>
           </article>
         </div>
       </div>
