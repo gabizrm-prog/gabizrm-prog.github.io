@@ -227,27 +227,37 @@
               <span class="project__status hand">pronto</span>
             </div>
             <h3>Faturamento Mensal Automático</h3>
-            <p class="case__lead">As faturas do mês saem sozinhas a partir dos dados de uso de cada cliente.</p>
+            <p class="case__lead">Todo mês, cada cliente de um dos produtos da empresa paga de acordo com quantos usuários usaram a plataforma. Automatizei esse processo de ponta a ponta: dos dados de uso até a fatura pronta para o cliente pagar.</p>
             <div class="ba">
               <div class="ba__col ba__col--before">
                 <span class="hand ba__tag">antes</span>
                 <ul>
-                  <li>Todo mês os dados de uso vinham do Power BI e eram somados na planilha <strong>à mão</strong></li>
-                  <li>Cada fatura era <strong>criada uma por uma</strong> no sistema de pagamentos</li>
-                  <li>Um valor digitado errado virava cobrança errada</li>
+                  <li>O relatório de uso de cada cliente vinha do Power BI</li>
+                  <li>Os usuários eram somados na planilha, <strong>cliente por cliente</strong></li>
+                  <li>Cada fatura era <strong>criada à mão</strong> no sistema de pagamentos</li>
+                  <li>Um número digitado errado virava uma cobrança errada</li>
                 </ul>
               </div>
               <span class="ba__arrow" aria-hidden="true">→</span>
               <div class="ba__col ba__col--after">
                 <span class="hand ba__tag">depois</span>
                 <ul>
-                  <li>É só colar os dados do mês na planilha: <strong>o resto é automático</strong></li>
-                  <li>Calcula o valor de cada cliente, aplica o mínimo e cria todas as faturas</li>
-                  <li>Se algo não bate, <strong>não envia nada</strong> e avisa por e-mail</li>
+                  <li>Só é preciso <strong>colar o relatório do mês</strong> na planilha</li>
+                  <li>O sistema calcula quanto cada cliente deve e <strong>cria todas as faturas sozinho</strong></li>
+                  <li>Se encontra algum erro, <strong>não cobra ninguém</strong> e avisa por e-mail</li>
+                  <li>Um painel mostra quais clientes já pagaram</li>
                 </ul>
               </div>
             </div>
-            <p class="case__how"><b>Como funciona:</b> uma rotina agendada detecta a aba nova na planilha, espera a colagem terminar, soma os usuários de cada cliente, gera as faturas via API e grava o link de cada uma de volta na planilha. Tem trava contra fatura duplicada e um modo de teste que compara o resultado com o que já existe no sistema. Também fiz um painel que mostra quais faturas já foram pagas.</p>
+            <div class="steps">
+              <p class="steps__title hand">como funciona, passo a passo</p>
+              <ol>
+                <li><b>Colo o relatório</b><span>Os dados do Power BI vão para uma aba nova da planilha.</span></li>
+                <li><b>O sistema percebe</b><span>A cada 2 horas ele procura a aba do mês e espera a colagem terminar.</span></li>
+                <li><b>Calcula os valores</b><span>Junta os usuários de cada cliente e aplica o valor mínimo.</span></li>
+                <li><b>Cria as faturas</b><span>Envia tudo pela API e grava o link de cada fatura na planilha.</span></li>
+              </ol>
+            </div>
             <ul class="tags"><li>Python</li><li>GitHub Actions</li><li>API REST</li><li>Google Sheets API</li><li>Power BI</li></ul>
             <p class="project__note hand">código e dados confidenciais · descrição genérica</p>
           </article>
