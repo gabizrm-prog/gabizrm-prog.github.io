@@ -116,7 +116,7 @@
           <p>
             Hoje sou estagiária no financeiro da <strong>Vesti</strong>. Comecei cuidando das planilhas e
             depois passei a automatizar parte do trabalho do time: criei uma auditoria de faturas que roda
-            todo dia e um painel de inadimplência que se atualiza sozinho.
+            todo dia, um painel de inadimplência que se atualiza sozinho e a geração automática das faturas mensais.
           </p>
           <p>
             Também gosto de <strong>front-end</strong> e quero me aprofundar em <strong>data science</strong>.
@@ -125,7 +125,7 @@
 
         <div class="about__side reveal">
           <ul class="stats hand">
-            <li><span class="stats__num" data-count="2">0</span><span>automações criadas por mim</span></li>
+            <li><span class="stats__num" data-count="3">0</span><span>automações criadas por mim</span></li>
             <li><span class="stats__num" data-count="5">0</span><span>projetos no GitHub</span></li>
             <li><span class="stats__num" data-count="10" data-suffix="+">0</span><span>tecnologias usadas</span></li>
             <li><span class="stats__num" data-count="6">0</span><span>cursos e certificações</span></li>
@@ -219,6 +219,38 @@
             <ul class="tags"><li>Python</li><li>JavaScript</li><li>HTML/CSS</li><li>GitHub Actions</li><li>API REST</li></ul>
             <p class="project__note hand">código e dados confidenciais · descrição genérica</p>
           </article>
+
+          <!-- FATURAMENTO -->
+          <article class="case reveal">
+            <div class="case__top">
+              <span class="project__num">03</span>
+              <span class="project__status hand">pronto</span>
+            </div>
+            <h3>Faturamento Mensal Automático</h3>
+            <p class="case__lead">As faturas do mês saem sozinhas a partir dos dados de uso de cada cliente.</p>
+            <div class="ba">
+              <div class="ba__col ba__col--before">
+                <span class="hand ba__tag">antes</span>
+                <ul>
+                  <li>Todo mês os dados de uso vinham do Power BI e eram somados na planilha <strong>à mão</strong></li>
+                  <li>Cada fatura era <strong>criada uma por uma</strong> no sistema de pagamentos</li>
+                  <li>Um valor digitado errado virava cobrança errada</li>
+                </ul>
+              </div>
+              <span class="ba__arrow" aria-hidden="true">→</span>
+              <div class="ba__col ba__col--after">
+                <span class="hand ba__tag">depois</span>
+                <ul>
+                  <li>É só colar os dados do mês na planilha: <strong>o resto é automático</strong></li>
+                  <li>Calcula o valor de cada cliente, aplica o mínimo e cria todas as faturas</li>
+                  <li>Se algo não bate, <strong>não envia nada</strong> e avisa por e-mail</li>
+                </ul>
+              </div>
+            </div>
+            <p class="case__how"><b>Como funciona:</b> uma rotina agendada detecta a aba nova na planilha, espera a colagem terminar, soma os usuários de cada cliente, gera as faturas via API e grava o link de cada uma de volta na planilha. Tem trava contra fatura duplicada e um modo de teste que compara o resultado com o que já existe no sistema. Também fiz um painel que mostra quais faturas já foram pagas.</p>
+            <ul class="tags"><li>Python</li><li>GitHub Actions</li><li>API REST</li><li>Google Sheets API</li><li>Power BI</li></ul>
+            <p class="project__note hand">código e dados confidenciais · descrição genérica</p>
+          </article>
         </div>
       </div>
     </section>
@@ -310,6 +342,7 @@
               <li>Automações em Python agendadas com GitHub Actions.</li>
               <li>Integração com APIs REST e Google Sheets API.</li>
               <li>Painel web de inadimplência atualizado todos os dias.</li>
+              <li>Geração automática das faturas mensais.</li>
             </ul>
             <ul class="tags"><li>Python</li><li>GitHub Actions</li><li>APIs</li><li>Google Sheets</li></ul>
           </li>
